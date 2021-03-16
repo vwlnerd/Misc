@@ -3,3 +3,10 @@ data<-read_dta("randomization_2021.dta")
 na.omit(data)
 
 ##3f
+linmod<-lm(observedoutcome~black,data=data)
+summary(linmod)
+mean(data$y0)
+mean(data$y1)-mean(data$y0)
+
+coef(linmod)[1]
+coef(linmod)[2]
