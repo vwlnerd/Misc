@@ -1,0 +1,5 @@
+require(haven)
+data<-read_dta("randomization_2021.dta")
+na.omit(data)
+
+##3f
